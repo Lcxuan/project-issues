@@ -6,6 +6,7 @@
     <modules>
         <module>project-issues-day01</module>
         <module>project-issues-common</module>
+        <module>project-issues-day02</module>
     </modules>
 
     <modelVersion>4.0.0</modelVersion>
@@ -30,6 +31,8 @@
         <hutool.version>5.8.22</hutool.version>
         <lombok.version>1.18.30</lombok.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <knife4j.version>4.3.0</knife4j.version>
+        <springdoc.version>1.6.15</springdoc.version>
     </properties>
 
     <dependencyManagement>
@@ -80,6 +83,17 @@
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct-processor</artifactId>
                 <version>${mapstruct.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${springdoc.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
